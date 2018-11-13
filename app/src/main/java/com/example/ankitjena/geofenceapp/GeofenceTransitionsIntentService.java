@@ -75,7 +75,7 @@ public class GeofenceTransitionsIntentService extends IntentService {
 
     private void callWebService(String relGeofenceLocation) throws JSONException {
         RequestQueue queue = Volley.newRequestQueue(this);
-        String endpoint = "<insert endpoint here>";
+        String endpoint = "http://msecbrad.byethost24.com/write.php";
         JSONObject postparams = new JSONObject();
         Date currentTime = Calendar.getInstance().getTime();
         postparams.put("Timestamp", currentTime.toString());
